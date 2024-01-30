@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap&subset=cyrillic');
+@import './reset.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.col {
+  flex: 0 0 auto;
+  padding: calc(0.5 * var(--bs-gutter-x));
+  width: 100%;
+}
+
+.col > .container {
+  padding: 0;
+}
+
+.col.minimal {
+  align-items: center;
+  display: flex;
+  flex: 0 0 1rem;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.table svg {
+  color: #555;
+}
+
+.bg-fuchsia-200 {
+  background-color: rgb(245 208 254);
+}
+
+.bg-cyan-200 {
+  background-color: rgb(165 243 252);
+}
+
+.bg-green-200 {
+  background-color: rgb(167 243 208);
+}
+
+.bg-lime-200 {
+  background-color: rgb(217 249 157);
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .col {
+    flex: 1 0 0%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
