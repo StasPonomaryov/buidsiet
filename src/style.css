@@ -11,6 +11,19 @@
 }
 
 body {
+  background-image: linear-gradient(
+    45deg,
+    hsl(240deg 40% 35%) 0%,
+    hsl(279deg 37% 37%) 13%,
+    hsl(313deg 37% 42%) 22%,
+    hsl(333deg 40% 51%) 30%,
+    hsl(348deg 53% 60%) 38%,
+    hsl(4deg 66% 67%) 47%,
+    hsl(17deg 81% 69%) 55%,
+    hsl(28deg 88% 71%) 65%,
+    hsl(39deg 89% 73%) 77%,
+    hsl(54deg 82% 76%) 100%
+  );
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
